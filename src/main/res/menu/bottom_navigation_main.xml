@@ -10,9 +10,4 @@
         android:icon="@drawable/ic_search"
         android:enabled="true"
         android:title="@string/search"/>
-    <item
-        android:id="@+id/action_account"
-        android:icon="@drawable/ic_account"
-        android:enabled="true"
-        android:title="@string/account"/>
 </menu>
