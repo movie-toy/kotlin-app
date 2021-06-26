@@ -1,17 +1,23 @@
 package com.toy.movietoy.navigation
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.toy.movietoy.DetailActivity
 import com.toy.movietoy.ProfileAdapter
 import com.toy.movietoy.Profiles
 import com.toy.movietoy.R
+import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
+
+    val TAG: String = "로그"
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var view = LayoutInflater.from(activity).inflate(R.layout.fragment_home, container, false)
@@ -66,5 +72,17 @@ class HomeFragment : Fragment() {
         rv_profile_pop.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL, false)
         rv_profile_pop.setHasFixedSize(true)
         rv_profile_pop.adapter = ProfileAdapter(profilePopList)
+
+        tv_daily_rank.setOnClickListener(View.OnClickListener {
+            onProfileClicked()
+        })
+    }
+
+    fun onProfileClicked(){
+
+        Log.d(TAG,"HomeFragment - onProfileClicked() called")
+
+        val intent = Intent(activity, DetailActivity::class.java)
+        startActivity(intent)
     }
 }

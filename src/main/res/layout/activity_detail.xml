@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="300dp"
+        android:layout_height="252dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/image2" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="컨텐츠 타이틀"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보라 청춘의 피는 끓는다 끓는 피에 뛰노는 심장은 거선의 기관과 같이 힘있다
+        이것이다 인류의 역사를 꾸며 내려온 동력은 바로 이것이다 이성은 투명하되 얼음과 같으며 지혜는
+        날카로우나 갑 속에 든 칼이다 청춘의..."
+        android:textColor="#000"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="출연진"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="촬영스텝"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

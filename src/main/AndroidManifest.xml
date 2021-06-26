@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieToy">
-        <activity android:name=".MainActivity">
+<!--        <activity android:name=".MainActivity"></activity>-->
+<!--        <activity android:name=".SplashScreenActivity"-->
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            <!-- 어플이 실행될때 가장 먼저 실행 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DetailActivity"></activity>
     </application>
 
 </manifest>
