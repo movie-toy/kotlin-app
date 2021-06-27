@@ -10,7 +10,16 @@ import com.toy.movietoy.navigation.HomeFragment
 import com.toy.movietoy.navigation.SearchFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-// 참고 : https://github.com/you6878/howlstagram
+/**
+ * 참고 : https://github.com/you6878/howlstagram
+ * https://dudmy.net/android/2017/04/09/improved-loading-screen/
+ * https://www.youtube.com/watch?v=bRusWAEn5GA
+ * https://www.youtube.com/watch?v=WlJszSmK_es&t=3860s
+ * https://www.youtube.com/watch?v=7XBX4XZTnd8&list=PLgOlaPUIbynrDSTJxS8AaE-2zYvPCjWtF&index=13
+ * https://www.youtube.com/watch?v=8O_fTpMybiE&list=PLgOlaPUIbynrDSTJxS8AaE-2zYvPCjWtF&index=25
+ * https://youtu.be/oE8nZRJ9vxA
+ * https://material.io/
+ * */
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
     val TAG: String = "로그"

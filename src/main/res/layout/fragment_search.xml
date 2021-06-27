@@ -1,26 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:id="@+id/search_scrollview">
 
-    <SearchView
-        android:id="@+id/searchView"
+<!--    <SearchView-->
+<!--        android:id="@+id/searchView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:queryHint="검색어를 입력하세요"-->
+<!--        android:iconifiedByDefault="false"-->
+<!--        android:layout_marginHorizontal="16dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="@drawable/searchview_background"-->
+<!--        android:queryBackground="@android:color/transparent"-->
+<!--        />-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/userList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"/>-->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="검색어를 입력하세요"
-        android:iconifiedByDefault="false"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/searchview_background"
-        android:queryBackground="@android:color/transparent"
-        />
+        android:padding="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_term_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:helperText="검색어를 입력해주세요"
+            app:counterEnabled="true"
+            app:counterMaxLength="12"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="영화검색">
 
-    <ListView
-        android:id="@+id/userList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
-</LinearLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_term_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="12"
+                android:inputType="text"
+                android:layout_marginBottom="5dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            layout="@layout/layout_button_search"/>
+        <!-- 26:04 -->
+    </LinearLayout>
+    
+    
+</ScrollView>
