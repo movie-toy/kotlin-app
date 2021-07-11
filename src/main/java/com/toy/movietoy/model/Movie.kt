@@ -12,3 +12,7 @@ data class Photo(val thumbnail: String?,
                  var createdAt: String?,
                  var likesCount: Int?): Serializable {
 }
+
+data class Profiles (val movieCd: Int,
+                     val thumbnail: Int,
+                     val title: String)

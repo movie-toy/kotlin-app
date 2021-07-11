@@ -24,11 +24,14 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
     val TAG: String = "로그"
     /**
+     * 완료
+     * 영화 정보 클릭 시, 상세 페이지 이동 (파라미터 전달)
+     * 검색 기본 틀 구현
+     *
      * 할일
-     * 1. 상세 페이지 구현
-     * 2. 영화 정보 클릭 시, 상세 페이지 이동 (파라미터 전달)
-     * 3. 검색 하단, 영화 컨텐츠 리스트 구현
-     * 4. Slapsh Sceen 구현
+     * 상세 페이지 > 상세 구현
+     * 검색 > 영화 컨텐츠 리스트 구현
+     * splash Screen > 구현
      * */
 
     private var homeFragment = HomeFragment()

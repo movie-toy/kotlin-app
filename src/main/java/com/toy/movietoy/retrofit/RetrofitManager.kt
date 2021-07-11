@@ -28,7 +28,6 @@ class RetrofitManager {
 //        val call = iRetrofit?.search(searchTerm = term).let {
 //            it
 //        }?: ""
-
         val term = searchTerm ?: ""
         val call = iRetrofit?.searchPhoto(searchTerm = term) ?: return
 

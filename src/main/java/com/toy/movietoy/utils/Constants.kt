@@ -6,7 +6,6 @@ object Constants {
 
 object API {
     const val BASE_URL: String = "https://api.unsplash.com/"
-
     const val CLIENT_ID: String = "qrG5C9FQ9quBHB0wGabkUKXRVkXZzYCBHazO7PWTXBg"
 
     const val SEARCH_PHOTOS: String = "search/photos"
